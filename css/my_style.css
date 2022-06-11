@@ -405,6 +405,76 @@ header nav ul li a.active {
     margin-bottom: 5px;
 }
 
+.consult-sec{
+    padding: 50px 0;
+}
+.consult-sec .rt h2{
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 42px;
+}
+.consult-sec .rt form .inp{
+    margin-bottom: 7px;
+}
+.consult-sec .rt form .inp input{
+    width: 450px;
+    height: 40px;
+    outline: 0;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+}
+.consult-sec .rt form .inp textarea{
+    width: 450px;
+    font-size: 16px;
+    outline: 0;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+}
+.consult-sec .rt form .inp textarea::placeholder{
+    font-family: "";
+}
+.consult-sec .rt form .inp input:focus-visible,
+.consult-sec .rt form .inp textarea:focus-visible{
+    border: 1px solid #000;
+}
+.consult-sec .rt form .btn{
+    /* border-radius: 0; */
+    background-color: #ff6b00;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.consult-sec .rt form .btn:hover{
+    color: #ff6b00;
+}
+.consult-sec .rt form .btn::before{
+    background-color: #fff;
+    border: 1px solid #ff6b00;
+}
+
+.upfoot{
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    background-color: #ff6b00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.upfoot p{
+    font-size: 34px;
+}
+.upfoot .btn{
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    background-color: #162648;
+    border-color: transparent;
+}
+
 footer{
     padding: 50px 0;
     padding-bottom: 20px;
@@ -540,8 +610,8 @@ footer .copyright a i{
     }
     header nav ul li{
         display: block;
-        text-align: center;
-        line-height: 72px;
+        padding-left: 16px;
+        line-height: 50px;
     }
     header nav ul li a{
         font-size: 20px;
@@ -573,7 +643,17 @@ footer .copyright a i{
         width: 100%;
         margin-bottom: 35px;
     }
-
+    .consult-sec .rt form .inp input,
+    .consult-sec .rt form .inp textarea{
+        width: 100%;
+    }
+    .upfoot{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .upfoot p{
+        margin-bottom: 8px;
+    }
     footer .ft-col{
         width: 100%;
     }
