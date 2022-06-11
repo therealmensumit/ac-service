@@ -87,6 +87,10 @@ section {
 }
 .top-head .num-mail a i{
     color: #1f73bc;
+    transition: all .4s;
+}
+.top-head .num-mail a:hover i{
+    color: #ff6b00;
 }
 .top-head .sc-icon a{
     margin-left: 7px;
@@ -418,6 +422,12 @@ header nav ul li a.active {
     }
     .banner-sec .swiper-slide .banner-content h2{
         font-size: 32px;
+    }
+    .banner-sec .swiper-slide .banner-content .btn{
+        margin: auto;
+    }
+    .popular-sec .lt figure{
+        width: auto;
     }
     .repair-sec .head{
         margin-bottom: 20px;
