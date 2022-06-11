@@ -438,6 +438,14 @@ footer .ft-col .addr span{
 footer .ft-col .ft-head h2{
     color: #fff;
 }
+footer .ft-col .serv{
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+}
+footer .ft-col .serv:hover{
+    color: #ff6b00;
+}
 footer .ft-col p{
     color: #fff;
 }
@@ -478,6 +486,7 @@ footer .ft-col form .btn::before{
 }
 footer .copyright{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
@@ -563,5 +572,19 @@ footer .copyright a i{
     .repair-sec .main li{
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    footer .ft-col{
+        width: 100%;
+    }
+    footer .copyright{
+        text-align: center;
+    }
+    footer .copyright .copy,
+    footer .copyright .icos{
+        width: 100%;
+    }
+    footer .copyright .copy{
+        margin-bottom: 10px;
     }
 }
