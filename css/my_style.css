@@ -223,36 +223,27 @@ header nav ul li a:hover {
 header nav ul li a.active {
     color: #ff6b00;
 }
-/* .head-space {
-    height: 75px;
-} */
-.banner-sec {
-    margin-bottom: -4px;
-}
-/* .banner-sec .mySwiper{
-    height: calc(100vh - 0px);
-} */
 
 .banner-sec img.mob {
     display: none;
 }
-.banner-sec .swiper-slide .banner-content {
+.banner-sec .banner-content {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: 20%;
-    transform: translateX(-25%);
+    left: 15%;
+    transform: translate(-50%, 0%);
+    width: 50%;
 }
-.banner-sec .swiper-slide .banner-content h2{
+.banner-sec .banner-content h2{
     font-size: 44px;
     color: #fff;
 }
-.banner-sec .swiper-slide .banner-content p{
+.banner-sec .banner-content p{
     font-size: 18px;
     color: #fff;
     margin: 10px 0;
 }
-.banner-sec .swiper-slide .banner-content .btn{
+.banner-sec .banner-content .btn{
     display: block;
     margin-top: 20px;
     text-align: center;
@@ -635,6 +626,134 @@ footer .copyright a i{
     margin-left: 6px;
 }
 
+/*****************/
+/* about us page */
+/*****************/
+.about-sec{
+    padding: 50px 0;
+}
+.about-sec .about-main{
+    text-align: center;
+}
+.about-sec .about-main h2{
+    font-size: 38px;
+    color: #1d202f;
+}
+.about-sec .about-main h2 span{
+    color: #ff6b00;
+}
+.about-sec .about-main h4{
+    font-size: 24px;
+    margin: 12px 0;
+    color: #1d202f;
+}
+.about-sec .about-main p{
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 800px;
+    margin: auto;
+}
+.static-sec{
+    padding: 50px 0;
+    background-color: #162648;
+}
+.static-sec .head{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+}
+.static-sec li{
+    text-align: center;
+    color: #1f73bc;
+    padding: 30px 12px;
+    margin: 1%;
+    background-color: #f5f5f5;
+    width: 23%;
+    border-radius: 8px;
+    transition: all .4s;
+}
+.static-sec li:hover{
+    background-color: #1877F2bd;
+    color: #fff;
+}
+.static-sec li i{
+    font-size: 50px;
+}
+.static-sec li h2{
+    margin: 20px 0;
+    font-size: 32px;
+}
+.static-sec li p{
+    font-size: 18px;
+}
+/*****************/
+/* contact  page */
+/*****************/
+.form-sec{
+    padding: 50px 0;
+}
+.form-sec h2{
+    font-size: 38px;
+    color: #1d202f;
+    margin-bottom: 20px;
+}
+.form-sec form .inp{
+    margin-bottom: 7px;
+}
+.form-sec form .inp input{
+    width: 450px;
+    height: 40px;
+    outline: 0;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+}
+.form-sec form .inp textarea{
+    width: 450px;
+    font-size: 16px;
+    outline: 0;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+}
+.form-sec form .inp textarea::placeholder{
+    font-family: "";
+}
+.form-sec form .inp input:focus-visible,
+.form-sec form .inp textarea:focus-visible{
+    border: 1px solid #000;
+}
+.form-sec form .btn{
+    /* border-radius: 0; */
+    background-color: #ff6b00;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.form-sec form .btn:hover{
+    color: #ff6b00;
+}
+.form-sec form .btn::before{
+    background-color: #fff;
+    border: 1px solid #ff6b00;
+}
+.form-sec .rt .detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.form-sec .rt .detail i{
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    padding: 12px;
+}
+.form-sec .rt .detail p{
+    font-size: 20px;
+    margin-left: 12px;
+}
+
 @media (max-width: 767px) {
     .container{
         width: 90%;
@@ -689,16 +808,16 @@ footer .copyright a i{
     header nav ul li a{
         font-size: 20px;
     }
-    .banner-sec .swiper-slide .banner-content{
+    .banner-sec .banner-content{
         top: 50%;
         left: 50%;
         text-align: center;
         transform: translate(-50%, -50%);
     }
-    .banner-sec .swiper-slide .banner-content h2{
+    .banner-sec .banner-content h2{
         font-size: 32px;
     }
-    .banner-sec .swiper-slide .banner-content .btn{
+    .banner-sec .banner-content .btn{
         margin-left: auto;
         margin-right: auto;
 
@@ -752,5 +871,16 @@ footer .copyright a i{
     }
     footer .copyright .copy{
         margin-bottom: 10px;
+    }
+    .static-sec li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-sec form {
+        margin-bottom: 30px;
+    }
+    .form-sec form .inp input,
+    .form-sec form .inp textarea{
+        width: 100%;
     }
 }
