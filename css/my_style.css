@@ -201,6 +201,9 @@ header nav ul li ul.drpdwn{
     background: #1f73bc;
     width: 165px;
 }
+header nav ul li ul.drpdwn li:last-child{
+    margin-bottom: 12px;
+}
 header nav ul li ul.drpdwn li a{
     line-height: 30px;
 }
@@ -344,7 +347,7 @@ header nav ul li a.active {
     margin-top: 12px;
 }
 .repair-sec .main li{
-    width: 31.33%;
+    width: 23%;
     margin: 1%;
     padding: 1%;
 }
@@ -352,7 +355,7 @@ header nav ul li a.active {
     margin-bottom: -4px;
 }
 .repair-sec .main li figure img{
-    height: 300px;
+    height: 240px;
     object-fit: cover;
 }
 .repair-sec .main li .content {
@@ -373,8 +376,11 @@ header nav ul li a.active {
     padding: 10px;
     background: #fff;
 }
+.repair-sec .main li .content h2{
+    min-height: 60px;
+}
 .repair-sec .main li .content p{
-    margin: 12px 0;
+    margin-bottom: 12px;
 }
 .repair-sec .main li .content .btn{
     display: block;
@@ -712,6 +718,12 @@ footer .copyright a i{
     }
     .repair-sec .main li figure img{
         height: auto;
+    }
+    .repair-sec .main li .content h2{
+        min-height: auto;
+    }
+    .repair-sec .main li .content p{
+        margin-top: 12px;
     }
     .empower-sec .rt .inn-main .main-lt,
     .empower-sec .rt .inn-main .main-rt{
