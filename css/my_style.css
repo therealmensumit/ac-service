@@ -162,7 +162,8 @@ header nav {
 .hamburger div {
     width: 30px;
     height: 3px;
-    background: #ff6b00;
+    background: #fff;
+    border-radius: 20px;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -178,13 +179,30 @@ header nav {
 
 header nav ul {
     padding-top: 17px;
-    transition: 1s;
+    transition: all .4s;
 }
 
 header nav ul li {
     display: inline-block;
     padding: 5px;    
     margin-left: 10px;
+    position: relative;
+}
+header nav ul li:hover ul.drpdwn {
+    opacity: 1;
+    visibility: visible;
+}
+header nav ul li ul.drpdwn{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #1f73bc;
+    width: 165px;
+}
+header nav ul li ul.drpdwn li a{
+    line-height: 30px;
 }
 
 header nav ul li a {
@@ -333,6 +351,10 @@ header nav ul li a.active {
 .repair-sec .main li figure{
     margin-bottom: -4px;
 }
+.repair-sec .main li figure img{
+    height: 300px;
+    object-fit: cover;
+}
 .repair-sec .main li .content {
     padding: 15px;
     border: 1px solid #ccc;
@@ -370,6 +392,42 @@ header nav ul li a.active {
     background-color: #fff;
 }
 
+.empower-sec{
+    padding: 50px 0;
+}
+.empower-sec .rt h2{
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+.empower-sec .rt p{
+    font-size: 18px;
+    line-height: 22px;
+}
+.empower-sec .rt .inn-main{
+    margin-top: 30px;
+}
+.empower-sec .rt .inn-main img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.empower-sec .rt .inn-main .main-lt{
+    width: 15%;
+}
+.empower-sec .rt .inn-main .main-rt{
+    width: 85%;
+}
+.empower-sec .rt .inn-main .main-rt h2{
+    margin-bottom: 10px;
+    line-height: normal;
+    font-size: 28px;
+}
+.empower-sec .rt .inn-main .main-rt p{
+    line-height: normal;
+    font-size: 16px;
+}
 
 .testimonial-sec{
     background-color: #1c294b;
@@ -597,6 +655,15 @@ footer .copyright a i{
     header nav .hamburger{
         display: block;
     }
+    header nav ul li a i{
+        transform: rotate(-90deg);
+    }
+    header nav ul li ul.drpdwn{
+        width: auto;
+        top: 0;
+        z-index: 1;
+        left: 136px;
+    }
     header nav ul{
         position: absolute;
         top: 70px;
@@ -642,6 +709,13 @@ footer .copyright a i{
     .repair-sec .main li{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .repair-sec .main li figure img{
+        height: auto;
+    }
+    .empower-sec .rt .inn-main .main-lt,
+    .empower-sec .rt .inn-main .main-rt{
+        width: 100%;
     }
     .consult-sec .rt form .inp input,
     .consult-sec .rt form .inp textarea{
