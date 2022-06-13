@@ -543,6 +543,9 @@ footer .ft-col{
     margin: 1%;
     padding: 1%;
 }
+footer .ft-col p.anchor a:hover{
+    color: #ff6b00;
+}
 footer .ft-col .ft-head{
     position: relative;
     padding-bottom: 10px;
